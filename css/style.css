@@ -1,0 +1,380 @@
+/*
+Theme Name: MyFolio
+Author: My Folio
+Version: 1.0.0
+
+
+Table of Content
+===================================================
+
+    1. Common Css
+    2. Nav Section
+    3. Banner Section
+*/
+/* Common Css Start */
+h1,h2,h3,h4,h5,h6,
+p,
+ul,ol,
+span,
+small{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+/*//Common Css End */ 
+/* Heading Section Css Start */
+#heading {
+    background-color: #2d3e50;
+    color: #fff;
+    height: 40px;
+}
+#heading .me-3{
+    margin-top: 10px;
+}
+#heading .col-lg-3{
+    margin-top: 10px;
+}
+#heading a{
+       
+    color: #fff;
+}
+#heading a:hover{
+   color: orange;
+
+}
+/* //Heading Section Css End */
+/* Nav Section Css Start */
+#main_menu ul li:hover a{
+	color: orange;
+}
+/*// Nav Section Css End */
+
+/* Banner Section Css Start */
+
+
+.part_slider {
+	position: relative;
+}
+
+.slider1 {
+	background: url(../img/asset\ 38.png) left top no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.slider2 {
+	background: url(../img/asset\ 37.jpeg) left top no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.slider3 {
+	background: url(../img/asset\ 39.jpeg) left top no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.slider1:before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-color: rgba(2, 2, 2, 0.4);
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.left_arrow {
+	color: #f1f1f1;
+	position: absolute;
+	font-size: 28px;
+	top: 50%;
+	left: 50px;
+	z-index: 99;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 1px solid #f1f1f1;
+	cursor: pointer;
+	line-height: 60px;
+	text-align: center;
+	transform: translateY(-50%);
+	-webkit-transition: all linear .5s;
+	-ms-transition: all linear .5s;
+	-mos-transition: all linear .5s;
+	-o-transition: all linear .5s;
+}
+
+.left_arrow:hover {
+	background: #fbaa33;
+	color: white;
+	border-color: #fbaa33;
+}
+
+.right_arrow {
+	color: #f1f1f1;
+	position: absolute;
+	font-size: 28px;
+	top: 50%;
+	right: 50px;
+	z-index: 99;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 1px solid #f1f1f1;
+	cursor: pointer;
+	line-height: 60px;
+	text-align: center;
+	transform: translateY(-50%);
+	-webkit-transition: all linear .5s;
+	-ms-transition: all linear .5s;
+	-mos-transition: all linear .5s;
+	-o-transition: all linear .5s;
+}
+
+.right_arrow:hover {
+	background: #fbaa33;
+	color: white;
+	border-color: #fbaa33;
+}
+
+.bnr_text {
+	padding-top: 138px;
+	padding-bottom: 230px;
+	font-family: 'Arimo';
+	color: #fff;
+}
+
+.bnr_text h1 {
+	font-weight: 700;
+	font-size: 52px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+.bnr_text h1 span {
+	font-weight: 400;
+	font-size: 40px;
+	display: block;
+}
+
+.bnr_text p {
+	font-weight: 400;
+	font-size: 14px;
+	padding-bottom: 60px;
+	padding-right: 510px;
+}
+
+
+
+.bnr_text .take_tour {
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	display: inline-block;
+	padding: 13px 22px;
+	border-radius: 5px;
+	margin-right: 20px;
+	background: #2d3e50;
+	transition: all linear .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+}
+
+
+.bnr_text .take_tour:hover {
+	background: #fbaa33;
+}
+
+.bnr_text .start_course{
+    	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	display: inline-block;
+	padding: 13px 22px;
+	border-radius: 5px;
+	margin-right: 20px;
+	transition: all linear .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+    background: #fbaa33;
+}
+.bnr_text .start_course:hover {
+    background:  #2d3e50;
+}
+
+
+
+
+
+
+/* //Banner Section Css End */
+/*About Section Start */
+#about{
+    margin-top: 80px;
+}
+#about .about_content p{
+    margin-top: 30px;
+}
+.about_slider_item{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    
+}
+
+.about_slider{
+    margin-top: 50px;
+    position: relative;
+    padding: 10px 0;
+  
+}
+.about_slider::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-image: url(../img/asset\ 41.png);
+    
+    height: 5px;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+}
+.about_slider:before {
+	position: absolute;
+	content: "";
+	bottom: 0px;
+	right: 0;
+	background: url(../img/asset\ 40.png);
+	width: 370px;
+	height: 3px;
+	z-index: 1;
+}
+#about .about_slider_text{
+    margin-top: 100px;
+    margin-left: -35px;
+}
+#about .anchor2{
+    margin-top: 70px;
+}
+#about .anchor2 a{
+    padding: 24px 21px;
+    background-color: #2d3e50;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+#about a:hover{
+	background-color: orange;
+}
+
+
+
+
+.counter_point_content img{
+	width: 150px;
+}
+
+
+.counter_point{
+	background-image: url(../img/asset\ 42.png);
+	background-size: cover;
+	background-position: center;
+	height: 230px;
+	margin-top: 80px;
+}
+.counter_point_table{
+	margin-top: 56px;
+	
+	color: #fff
+}
+
+/* //About Section End */
+/* Course Section Css Start */
+#course{
+	margin-top: 100px;
+}
+#course .course_item .course_item_inner{
+	background-color: #F5F5F5;
+	
+	padding: 12px;
+
+}
+#course .course_item .course_thumb{
+	position: relative;
+}
+#course .course_item .course_thumb .overlay{
+	position: absolute;
+	inset: 0;
+	/*text-align: center;
+	margin-top: 120px;*/
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#course .course_item .course_thumb .overlay a{
+	width: 50px;
+	height: 50px;
+	background: orange;
+	border-radius: 50%;
+	display: inline-block; 
+	text-align: center;
+	line-height: 50px;
+	color: white;
+}
+#course .course_item .course_thumb img{
+	width: 100%;
+}
+
+/* //Course Section Css End */
+
+
+/*PB CALENDAR Section Css Start */
+#faq .accordion-item{
+	margin-bottom: 50px;
+	border: 0;
+}
+#faq .accordion-button[aria-expanded="true"]{
+	background-color: orange;
+}
+#faq .accordion-button[aria-expanded="false"]{
+	background-color: white;
+}
+
+/* //PB CALENDAR Section Css END */
+/* Contact Section Css Start */
+#contact{
+	background-color: #2d3e50;
+}
+.contact_content1_icons i{
+ font-size: 25px;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background-color: #fff;
+ text-align: center;
+ align-items: center;
+ 
+}
+
+
+
+
+
+/* //Contact Section Css EnD */
